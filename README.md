@@ -2,6 +2,8 @@
 I finished Kevin Powell's 21 day CSS challenge.
 You can see the screenshots for different screen sizes.
 I am not exactly happy with my solution, I know I can improve it. 
+I have changed design a little bit for making things a little bit easy for me. 
+Thanks to anyone who gives feedback. 
 
 Mobile Design:
 <img src="https://user-images.githubusercontent.com/70946845/109505059-46c24600-7aad-11eb-9561-e706835e4c10.png"/>
