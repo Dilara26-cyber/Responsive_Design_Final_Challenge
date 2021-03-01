@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+.logo:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+p {
+  max-width: 900px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #a59678;
+  margin: 0;
+}
+main {
+  background: rgb(96, 100, 112);
+  background: linear-gradient(
+    77deg,
+    rgba(96, 100, 112, 1) 0%,
+    rgba(119, 112, 112, 1) 40%,
+    rgba(165, 150, 120, 1) 99%
+  );
+}
+
+nav {
+  background-color: #2e323f;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+section {
+  padding: 1em;
+}
+footer {
+  background-color: #3b4050;
+  color: white;
+  text-align: center;
+}
+.fa-ellipsis-v {
+  font-size: 1.75rem;
+  color: white;
+  transition: all 1s ease-in;
+}
+.nav {
+  display: none;
+}
+.nav--open {
+  display: inline;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  height: 30px;
+  margin: 0 auto;
+}
+.section__second__card {
+  color: white;
+}
+.hero {
+  padding: 1em;
+  background-color: #3b4050;
+  color: white;
+}
+.hero__span {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.hero__btn {
+  margin-top: 1em;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+  background-color: #a59678;
+  outline: none;
+  border: none;
+}
+.hero__btn a {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.125rem;
+}
+.section__first {
+  background-color: #eee;
+}
+.section__first__card {
+  margin-bottom: 1em;
+}
+.section__second__image {
+  width: 100%;
+}
+.side__card {
+  background-color: #3b4050;
+  text-align: center;
+  padding: 0.5em;
+  margin: 1em 0;
+  transition: transform 0.3s ease-in-out;
+}
+.side__card:hover {
+  transform: translateY(-10px);
+}
+.side__card__text {
+  color: white;
+  font-size: 1rem;
+}
+.nav--active {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-right: 1em;
+}
+.section__first {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.section__second__heading {
+  color: #eee;
+}
+@media (min-width: 750px) {
+  .fa-ellipsis-v {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .nav {
+    display: inline;
+  }
+  .logo {
+    margin-left: 2em;
+  }
+  .nav__item {
+    margin-right: 1em;
+  }
+  section {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-around;
+  }
+  .section__second {
+    align-items: center;
+  }
+  .footer__heading {
+    color: white;
+    padding: 1em 0;
+    font-size: 2.5rem;
+  }
+  .footer__card {
+    display: flex;
+    text-align: initial;
+    gap: 1em;
+  }
+  .footer__card__regular {
+    margin: 0 0.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    justify-content: space-evenly;
+  }
+  .hero__heading {
+    width: 50%;
+    font-size: 4rem;
+  }
+  .hero__side {
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  .section__first {
+    text-align: center;
+    min-height: 400px;
+    align-items: center;
+  }
+  .section__second__card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+  .section__second__side {
+    width: 40%;
+  }
+  .side__card {
+    padding: 2.5em;
+  }
+}
+@media (min-width: 1600px) {
+  section {
+    font-size: 1.25rem;
+  }
+  .hero {
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero__heading {
+    font-size: 5rem;
+  }
+  .hero__side {
+    width: 50%;
+  }
+  .section__second__card {
+    align-items: center;
+    margin-left: 2em;
+    margin-right: auto;
+    gap: 2em;
+    width: 50%;
+  }
+  .section__second__side {
+    width: 30%;
+    margin-right: 2em;
+  }
+  .side__card__text {
+    font-size: 1.125rem;
+  }
+  .section__second {
+    margin-top: 10em;
+  }
+  main {
+    padding: 10em;
+  }
+}
